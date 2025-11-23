@@ -1,6 +1,6 @@
 # TrafficVision.Live Chrome Extension
 
-A Chrome extension that provides quick access to your favorite traffic cameras and routes from TrafficVision.Live.
+A Chrome extension that provides quick access to your favorite traffic cameras and custom routes from TrafficVision.Live.
 
 ## Features
 
@@ -12,11 +12,12 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
 
 ## Installation (Development)
 
+1. Clone/download this repo
 1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable **Developer mode** using the toggle in the top right corner
-3. Click **Load unpacked**
-4. Select the `trafficvision-chrome-extension` folder
-5. The TrafficVision.Live extension icon will appear in your Chrome toolbar
+1. Enable **Developer mode** using the toggle in the top right corner
+1. Click **Load unpacked**
+1. Select the `trafficvision-chrome-extension` folder
+1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
 
 ## Usage
 
@@ -38,13 +39,6 @@ The extension supports persistent background music streaming:
 4. The music stream is managed by a background service worker
 5. To stop the music, reopen the extension and toggle music off
 
-## Technical Details
-
-- **Manifest Version**: 3
-- **Popup Dimensions**: 400px × 600px
-- **Content**: Embeds the TrafficVision.Live `/chrome-extension` route via iframe
-- **Permissions**: None required (loads public web content)
-
 ## File Structure
 
 ```
@@ -60,15 +54,7 @@ trafficvision-chrome-extension/
 └── README.md           # This file
 ```
 
-## Publishing to Chrome Web Store
-
-1. Zip the extension folder (exclude any development files)
-2. Go to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/)
-3. Pay the one-time $5 developer registration fee (if not already registered)
-4. Click **New Item** and upload the ZIP file
-5. Fill out the store listing with descriptions and screenshots
-6. Submit for review (typically 1-3 days)
 
 ## Support
 
-For issues or questions, visit [TrafficVision.Live](https://trafficvision.live)
+For issues or questions, visit [TrafficVision.Live](https://trafficvision.live) to contact the team.
