@@ -12,34 +12,13 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
 - Seamless authentication with the main TrafficVision.Live site
 - Background music streaming (Nightride FM) that continues even when side panel is closed
 
-## Installation (Pre-packaged)
+## Installation
 
 1. Download `TrafficVisionLive-Chrome.zip` from this repository
 1. Open Chrome and navigate to `chrome://extensions/`
 1. Enable **Developer mode** using the toggle in the top right corner
 1. Drag and drop the zip file onto the extensions page, or click **Load unpacked** and select the extracted folder
 1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
-
-## Installation (Development)
-
-1. Clone/download this repo
-1. Open Chrome and navigate to `chrome://extensions/`
-1. Enable **Developer mode** using the toggle in the top right corner
-1. Click **Load unpacked**
-1. Select the `trafficvision-chrome-extension` folder
-1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
-
-## Packaging for Distribution
-
-**Note:** This section is for the developer/maintainer only. If you're a user, simply download the pre-packaged zip file above.
-
-To create a distributable package for Chrome Web Store submission:
-
-```bash
-./package.sh
-```
-
-This script creates `TrafficVisionLive-Chrome.zip` containing only the necessary extension files (manifest, scripts, HTML, CSS, and icons).
 
 ## Usage
 
@@ -75,6 +54,29 @@ Customize how the extension displays content:
    - **Full Homepage** - Load the complete website homepage with map and all features. May require more scrolling in the side panel.
 6. Click **Save Settings**
 7. Close and reopen the extension to see the changes
+
+---
+
+## Development
+
+### Installation (Development)
+
+1. Clone/download this repo
+1. Open Chrome and navigate to `chrome://extensions/`
+1. Enable **Developer mode** using the toggle in the top right corner
+1. Click **Load unpacked**
+1. Select the `trafficvision-chrome-extension` folder
+1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
+
+### Packaging for Distribution
+
+To create a distributable package for Chrome Web Store submission:
+
+```bash
+./package.sh
+```
+
+This script creates `TrafficVisionLive-Chrome.zip` containing only the necessary extension files (manifest, scripts, HTML, CSS, and icons).
 
 ## File Structure
 
