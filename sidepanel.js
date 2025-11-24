@@ -7,9 +7,9 @@ chrome.storage.sync.get(['viewMode'], (result) => {
   const iframe = document.getElementById('app-iframe');
 
   if (viewMode === 'extension') {
-    iframe.src = 'https://trafficvision.live/chrome-extension?v=18';
+    iframe.src = 'https://trafficvision.live/chrome-extension?v=19';
   } else {
-    iframe.src = 'https://trafficvision.live/?v=18';
+    iframe.src = 'https://trafficvision.live/?v=19';
   }
 
   console.log('[SidePanel] Loading view mode:', viewMode, '- URL:', iframe.src);
