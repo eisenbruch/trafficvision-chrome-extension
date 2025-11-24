@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TrafficVision.Live - Settings</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      color: #00ff00;
+      padding: 20px;
+      min-width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #00ff00;
+      margin-bottom: 30px;
+    }
+
+    .setting-group {
+      background: rgba(0, 255, 0, 0.05);
+      border: 2px solid #00ff00;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    }
+
+    .setting-label {
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      color: #00ff00;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid rgba(0, 255, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .radio-option:hover {
+      background: rgba(0, 255, 0, 0.1);
+      border-color: #00ff00;
+    }
+
+    .radio-option input[type="radio"] {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .option-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .option-description {
+      font-size: 11px;
+      opacity: 0.7;
+      line-height: 1.4;
+    }
+
+    .save-button {
+      width: 100%;
+      padding: 15px;
+      background: transparent;
+      border: 2px solid #00ff00;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+      font-weight: bold;
+    }
+
+    .save-button:hover {
+      background: #00ff00;
+      color: #000;
+      box-shadow: 0 0 20px #00ff00;
+    }
+
+    .status {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .status.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚙ TrafficVision.Live Settings</h1>
+
+  <div class="setting-group">
+    <div class="setting-label">EXTENSION VIEW MODE:</div>
+
+    <label class="radio-option">
+      <input type="radio" name="viewMode" value="extension" id="extensionMode">
+      <div>
+        <div class="option-title">Extension View (Recommended)</div>
+        <div class="option-description">
+          Optimized layout for the side panel with favorites and routes.
+          Best experience for quick camera access.
+        </div>
+      </div>
+    </label>
+
+    <label class="radio-option">
+      <input type="radio" name="viewMode" value="homepage" id="homepageMode">
+      <div>
+        <div class="option-title">Full Homepage</div>
+        <div class="option-description">
+          Load the complete website homepage with map and all features.
+          May require more scrolling in the side panel.
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <button class="save-button" id="saveButton">Save Settings</button>
+  <div class="status" id="status">Settings saved successfully!</div>
+
+  <script src="options.js"></script>
+</body>
+</html>
