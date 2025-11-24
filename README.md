@@ -2,7 +2,7 @@
 
 A Chrome extension that provides quick access to your favorite traffic cameras and custom routes from TrafficVision.Live.
 
-![TrafficVision.Live Chrome Extension](media/trafficvisionlive-chrome-extension.webp)
+![TrafficVision.Live Chrome Extension](media/trafficvisionlive-chrome-extension-2.webp)
 
 ## Features
 
@@ -12,6 +12,14 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
 - Seamless authentication with the main TrafficVision.Live site
 - Background music streaming (Nightride FM) that continues even when side panel is closed
 
+## Installation (Pre-packaged)
+
+1. Download `TrafficVisionLive-Chrome.zip` from this repository
+1. Open Chrome and navigate to `chrome://extensions/`
+1. Enable **Developer mode** using the toggle in the top right corner
+1. Drag and drop the zip file onto the extensions page, or click **Load unpacked** and select the extracted folder
+1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
+
 ## Installation (Development)
 
 1. Clone/download this repo
@@ -20,6 +28,18 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
 1. Click **Load unpacked**
 1. Select the `trafficvision-chrome-extension` folder
 1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
+
+## Packaging for Distribution
+
+**Note:** This section is for the developer/maintainer only. If you're a user, simply download the pre-packaged zip file above.
+
+To create a distributable package for Chrome Web Store submission:
+
+```bash
+./package.sh
+```
+
+This script creates `TrafficVisionLive-Chrome.zip` containing only the necessary extension files (manifest, scripts, HTML, CSS, and icons).
 
 ## Usage
 
@@ -31,6 +51,16 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
    - **MY ROUTES** - Your saved routes
 5. Click **FULL SITE ↗** to open the full TrafficVision.Live website in a new tab
 6. Click any route or camera to view details
+
+### Background Music
+
+The extension supports persistent background music streaming:
+
+1. Open the extension and click the settings icon (⚙️)
+2. Click the **MUSIC** button to toggle on/off
+3. Music will continue playing even when you close the side panel
+4. The music stream is managed by a background service worker
+5. To stop the music, reopen the extension and toggle music off
 
 ### Extension Options
 
@@ -46,35 +76,27 @@ Customize how the extension displays content:
 6. Click **Save Settings**
 7. Close and reopen the extension to see the changes
 
-### Background Music
-
-The extension supports persistent background music streaming:
-
-1. Open the extension and click the settings icon (⚙️)
-2. Click the **MUSIC** button to toggle on/off
-3. Music will continue playing even when you close the side panel
-4. The music stream is managed by a background service worker
-5. To stop the music, reopen the extension and toggle music off
-
 ## File Structure
 
 ```
 trafficvision-chrome-extension/
-├── manifest.json       # Extension configuration
-├── sidepanel.html      # Side panel HTML
-├── sidepanel.css       # Side panel styling
-├── sidepanel.js        # Side panel script
-├── options.html        # Extension options/settings page
-├── options.js          # Options page logic
-├── background.js       # Service worker for background music and side panel
-├── offscreen.html      # Offscreen document for audio playback
-├── offscreen.js        # Audio playback handler
-├── icons/              # Extension icons
+├── manifest.json                      # Extension configuration
+├── sidepanel.html                     # Side panel HTML
+├── sidepanel.css                      # Side panel styling
+├── sidepanel.js                       # Side panel script
+├── options.html                       # Extension options/settings page
+├── options.js                         # Options page logic
+├── background.js                      # Service worker for music and side panel
+├── offscreen.html                     # Offscreen doc for audio
+├── offscreen.js                       # Audio playback handler
+├── package.sh                         # Packaging script
+├── TrafficVisionLive-Chrome.zip       # Pre-packaged extension
+├── icons/                             # Extension icons
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
-├── media/              # Screenshots and assets
-└── README.md           # This file
+├── media/                             # Screenshots and assets
+└── README.md                          # This file
 ```
 
 
