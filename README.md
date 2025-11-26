@@ -10,7 +10,9 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
 
 ## Demo
 
-[![TrafficVision.Live Chrome Extension Demo](https://i.imgur.com/miZ42GX.png)](https://www.youtube.com/watch?v=4kf0Lyx2l64)
+<a href="https://www.youtube.com/watch?v=4kf0Lyx2l64" target="_blank">
+  <img src="https://i.imgur.com/miZ42GX.png" alt="TrafficVision.Live Chrome Extension Demo">
+</a>
 
 
 ## Screenshot
