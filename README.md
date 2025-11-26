@@ -1,15 +1,27 @@
-# TrafficVision.Live Chrome Extension
+# [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) Chrome Extension
 
-A Chrome extension that provides quick access to your favorite traffic cameras and custom routes from TrafficVision.Live.
+A Chrome extension that provides quick access to your favorite traffic cameras and custom routes from [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension).
 
-![TrafficVision.Live Chrome Extension](media/trafficvisionlive-chrome-extension-2.webp)
+<p align="center">
+  <a href="https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension">
+    <img src="https://img.shields.io/badge/Visit-TrafficVision.Live-blue?style=for-the-badge&logo=googlechrome" alt="Visit TrafficVision.Live">
+  </a>
+</p>
+
+## Demo
+
+[![TrafficVision.Live Chrome Extension Demo](https://i.imgur.com/miZ42GX.png)](https://www.youtube.com/watch?v=4kf0Lyx2l64)
+
+
+## Screenshot
+![TrafficVision.Live Chrome Extension Screenshot](media/trafficvisionlive-chrome-extension-2.webp)
 
 ## Features
 
 - Access your favorite traffic cameras instantly from the Chrome side panel
 - View your saved routes
 - Resizable side panel interface for flexible viewing
-- Seamless authentication with the main TrafficVision.Live site
+- Seamless authentication with the main [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) site
 - Background music streaming (Nightride FM) that continues even when side panel is closed
 
 ## Installation
@@ -18,17 +30,17 @@ A Chrome extension that provides quick access to your favorite traffic cameras a
 1. Open Chrome and navigate to `chrome://extensions/`
 1. Enable **Developer mode** using the toggle in the top right corner
 1. Drag and drop the zip file onto the extensions page, or click **Load unpacked** and select the extracted folder
-1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
+1. The [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) extension icon will appear in your Chrome toolbar
 
 ## Usage
 
-1. Click the TrafficVision.Live icon in your Chrome toolbar
+1. Click the [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) icon in your Chrome toolbar
 2. The extension will open in the side panel showing your favorites view
 3. Resize the side panel to your preferred width
 4. Use the bottom navigation to switch between:
    - **FAVORITES** - Your favorite cameras
    - **MY ROUTES** - Your saved routes
-5. Click **FULL SITE ↗** to open the full TrafficVision.Live website in a new tab
+5. Click **FULL SITE ↗** to open the full [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) website in a new tab
 6. Click any route or camera to view details
 
 ### Background Music
@@ -46,7 +58,7 @@ The extension supports persistent background music streaming:
 Customize how the extension displays content:
 
 1. Navigate to `chrome://extensions/`
-2. Find **TrafficVision.Live** extension
+2. Find **[TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension)** extension
 3. Click **Details**
 4. Click **Extension options**
 5. Choose your preferred view mode:
@@ -66,7 +78,7 @@ Customize how the extension displays content:
 1. Enable **Developer mode** using the toggle in the top right corner
 1. Click **Load unpacked**
 1. Select the `trafficvision-chrome-extension` folder
-1. The TrafficVision.Live extension icon will appear in your Chrome toolbar
+1. The [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) extension icon will appear in your Chrome toolbar
 
 ### Packaging for Distribution
 
@@ -104,4 +116,4 @@ trafficvision-chrome-extension/
 
 ## Support
 
-For issues or questions, visit [TrafficVision.Live](https://trafficvision.live) to contact the team.
+For issues or questions, visit [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension) to contact the team.
