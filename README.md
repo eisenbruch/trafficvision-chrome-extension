@@ -3,8 +3,13 @@
 A Chrome extension that provides quick access to your favorite traffic cameras and custom routes from [TrafficVision.Live](https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension).
 
 <p align="center">
+  <a href="https://chromewebstore.google.com/detail/trafficvisionlive/khmalmiglenhmpfappknncaghhlkemlb">
+    <img src="https://img.shields.io/badge/Download-Chrome_Web_Store-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Download from Chrome Web Store">
+  </a>s
+</p>
+<p align="center">
   <a href="https://trafficvision.live/?utm_source=github&utm_medium=repo&utm_campaign=trafficvision-chrome-extension">
-    <img src="https://img.shields.io/badge/Visit-TrafficVision.Live-blue?style=for-the-badge&logo=googlechrome" alt="Visit TrafficVision.Live">
+    <img src="https://img.shields.io/badge/Visit-TrafficVision.Live-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit TrafficVision.Live">
   </a>
 </p>
 
